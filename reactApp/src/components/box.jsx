@@ -1,10 +1,10 @@
-const box=()=>{
+const box=(props)=>{
     return(
         
-        <div className="box">
-             This is a box
-        </div>
-        
+            <div className={`box ${props.class}`} >
+                {props.class}
+            </div>
+            
         
         
     )

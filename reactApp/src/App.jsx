@@ -39,24 +39,13 @@ const App=()=>{
   return(
     <>
     {nav()}
-    <Box/>
+    <Box class="red"/>
     {/* <Box /> // only components allows capital letters */}
-    <Box />
-    <Box />
-    <Box />
-    <Box />
-    <Box />
-    <Box />
-    <Box />
-    <Box />
-    <Box />
-    <Box />
-    <Box />
-
-    <Box />
-    <Box />
-    <Box />
-    <Box />
+    <Box class = "blue"/>
+    <Box class = "green"/>
+    <Box class = "yellow"/>
+    <Box class = "purple"/>
+  
 
    
     {/* <h1>My first react render</h1>

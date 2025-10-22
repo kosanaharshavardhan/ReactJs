@@ -45,9 +45,25 @@
 .box{
   height: 100px;
   width: 250px;
-  background-color: blue;
   padding: 10px;
   display: inline-block;
+}
+
+.red{
+  background-color: red;
+}
+.blue{
+  background-color: blue;
+}
+.green{
+  background-color: green;
+}
+.yellow{
+  color:black;
+  background-color: yellow;
+}
+.purple{
+  background-color: purple;
 }
 
 .nav{
