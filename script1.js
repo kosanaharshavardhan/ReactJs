@@ -1,4 +1,4 @@
-import {c} from './script2.js'
+import {b} from './script2.js'
 import arr from './script2.js'
 
 console.log(b)
