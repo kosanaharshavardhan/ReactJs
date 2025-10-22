@@ -1,7 +1,6 @@
 // import { useState } from 'react'
 // import reactLogo from './assets/react.svg'
 // import viteLogo from '/vite.svg'
-import './App.css'  
 
 // function App() {
 //   const [count, setCount] = useState(0)
@@ -32,27 +31,65 @@ import './App.css'
 //   )
 // }
 
+
 // export default App
-import nav from './components/nav'
-import Box from './components/box'
-const App=()=>{
-  return(
-    <>
-    {nav()}
-    <Box class="red"/>
-    {/* <Box /> // only components allows capital letters */}
-    <Box class = "blue"/>
-    <Box class = "green"/>
-    <Box class = "yellow"/>
-    <Box class = "purple"/>
+// import nav from './components/nav'
+// import Box from './components/box'
+
+
+
+
+// const App=()=>{
+//   return(
+//     <>
+//     {nav()}
+//     <Box class="red"/>
+//     {/* <Box /> // only components allows capital letters */}
+//     <Box class = "blue"/>
+//     <Box class = "green"/>
+//     <Box class = "yellow"/>
+//     <Box class = "purple"/>
   
 
    
-    {/* <h1>My first react render</h1>
-    <h2>Learn react</h2>
-    <button>CLick Me</button> */}
-    </>
+//     {/* <h1>My first react render</h1>
+//     <h2>Learn react</h2>
+//     <button>CLick Me</button> */}
+//     </>
+//   )
+// }
+
+import './App.css'  
+
+import Fakedbfetch from './components/fakedbfetch';
+
+const App =()=>{
+
+  const data= [
+  { name: "Arjun", branch: "CSE", class: "red" },
+  { name: "Priya", branch: "ECE", class: "blue" },
+  { name: "Rohan", branch: "CSM", class: "green" },
+  { name: "Sneha", branch: "EEE", class: "yellow" },
+  { name: "Karan", branch: "Civil", class: "purple" },
+  { name: "Anika", branch: "MECH", class: "red" },
+  { name: "Vikram", branch: "CSD", class: "blue" },
+  { name: "Isha", branch: "CSE", class: "green" },
+  { name: "Aditya", branch: "ECE", class: "yellow" },
+  { name: "Meera", branch: "Civil", class: "purple" },
+];
+
+
+  return(
+    <div className="parent">
+      {data.map((Element,index)=>{
+        return (
+        <div key={index}>
+          <Fakedbfetch class={Element.class} name={Element.name} branch={Element.branch}/>
+        </div>
+        )
+      })}
+    </div>
+
   )
 }
-
 export default App
