@@ -33,13 +33,35 @@ import './App.css'
 // }
 
 // export default App
-
+import nav from './components/nav'
+import Box from './components/box'
 const App=()=>{
   return(
     <>
-    <h1>My first react render</h1>
+    {nav()}
+    <Box/>
+    {/* <Box /> // only components allows capital letters */}
+    <Box />
+    <Box />
+    <Box />
+    <Box />
+    <Box />
+    <Box />
+    <Box />
+    <Box />
+    <Box />
+    <Box />
+    <Box />
+
+    <Box />
+    <Box />
+    <Box />
+    <Box />
+
+   
+    {/* <h1>My first react render</h1>
     <h2>Learn react</h2>
-    <button>CLick Me</button>
+    <button>CLick Me</button> */}
     </>
   )
 }
